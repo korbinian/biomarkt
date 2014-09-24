@@ -139,6 +139,26 @@ module.exports = function(grunt) {
             files: {
                 src: ['dev/styles/style.css'],
             },
+        },
+        'ftp-deploy': {
+            build: {
+                auth: {
+                host: 'wasserburger-biomarkt.de',
+                port: 21,
+                authKey: 'key1'
+            },
+            src: 'build/',
+            dest: 'sites/all/themes/biomarkt/',
+            exclusions: []
+            }
+        },
+        colorguard: {
+            options: {
+            // Task-specific options go here.
+            },
+            files: {
+                src: ['dev/styles/style.css'],
+            },
         }
 });
 
@@ -152,9 +172,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-sync');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-colorguard');
+    grunt.loadNpmTasks('grunt-ftp-deploy');
 
 
     grunt.registerTask('default', ['concat', 'uglify', 'sass:dev', 'autoprefixer']);
-    grunt.registerTask('build', ['sync', 'sass:build', 'htmlmin:build']);
+    grunt.registerTask('build', ['sync', 'sass:build', 'htmlmin:build', 'ftp-deploy']);
 
 };
