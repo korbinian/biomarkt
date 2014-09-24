@@ -1,0 +1,6 @@
+name = Biomarkt
+description = Theme for wasserburger-biomarkt.de
+package = Core
+version = VERSION
+core = 7.x
+stylesheets[all][] = styles/style.css
