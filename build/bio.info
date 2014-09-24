@@ -1,10 +1,11 @@
 name = biomarkt
-description = lorem ipsum
+description = theme for wasserburger-biomarkt.de
 package = Core
-version = VERSION
+version = 2.0.1
 core = 7.x
 stylesheets[all][] = styles/style.css
 
 regions[col-1] = col-1
 regions[col-2] = col-2
 regions[col-3] = col-3
+regions[content] = content
