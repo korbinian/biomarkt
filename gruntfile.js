@@ -24,9 +24,7 @@ module.exports = function(grunt) {
         jshint: {
             files: {
                 src: [
-                    'dev/scripts/*.js',
-                    '!dev/scripts/script.js',
-                    '!dev/scripts/script.min.js'
+                    'dev/scripts/script.js',
                 ]
             }
         },
@@ -75,10 +73,11 @@ module.exports = function(grunt) {
                     '**',
                     '!**/*.scss', 
                     '!images/src/**',
-                    '!styles/base',
-                    '!styles/layout',
+                    '!styles/global',
+                    '!styles/helpers',
                     '!styles/modules',
-                    '!styles/theme',
+                    '!styles/pages',
+                    '!styles/sections',
                     '!styles/vendor',
                     '!scripts/*.js',
                     'scripts/script.min.js',
@@ -100,10 +99,11 @@ module.exports = function(grunt) {
             css: {
                 files: [
                     'dev/styles/*.scss',
-                    'dev/styles/base/*.scss',
-                    'dev/styles/layout/*.scss',
+                    'dev/styles/global/*.scss',
+                    'dev/styles/helpers/*.scss',
                     'dev/styles/modules/*.scss',
-                    'dev/styles/theme/*.scss',
+                    'dev/styles/pages/*.scss',
+                    'dev/styles/sections/*.scss',
                     'dev/styles/vendor/*.scss'
                 ],
                 tasks: ['sass:dev', 'autoprefixer'],
