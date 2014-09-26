@@ -15,58 +15,45 @@
 	</div>
 </header>
 	
-<main class="site-main">
+<div class="site-main">
 	<div class="row">
 
-		<div class="temp">
+		<main class="site-content">
 
-			<h2>breadcrumbs</h2>
-			<?php print $breadcrumb; ?>
-
-			<?php print render($title_prefix); ?>
-    		<?php if ($title): ?>
-      			<h1 class="page-title"><?php print $title; ?></h1>
-    		<?php endif; ?>
-    		<?php print render($title_suffix); ?>
-
-    		<h2>tabs</h2>
-			<?php print render($tabs); ?>
-
-			<h2>messages</h2>
-			<?php if ($messages): ?>
-        		<?php print $messages; ?>
-      		<?php endif; ?>
-			
-			<h2>help</h2>
-      		<?php if ($page['help']): ?>
-          		<?php print render($page['help']); ?>
-      		<?php endif; ?>
-
-			<h2>highlighted</h2>
 			<?php if ($page['highlighted']): ?>
 				<?php print render($page['highlighted']); ?>
 			<?php endif; ?>
 
-			<h2>content</h2>
 			<?php print render($page['content']); ?>
 
-			<h2>col-1</h2>
-			<?php print render($page['sidebar_first']); ?>
+			<?php print $feed_icons; ?> 
 
-			<h2>col-2</h2>
-			<?php print render($page['sidebar_second']); ?>
-			
-			<h2>action links</h2>
-			<?php if ($action_links): ?>
-				<ul class="action-links">
-					<?php print render($action_links); ?>
-				</ul>
+			<?php if ($messages): ?>
+				<?php print $messages; ?>
 			<?php endif; ?>
 
-		</div>
+			<?php if ($page['help']): ?>
+				<?php print render($page['help']); ?>
+			<?php endif; ?>
+
+			<?php if ($action_links): ?>
+			<ul class="action-links">
+				<?php print render($action_links); ?>
+			</ul>
+			<?php endif; ?>
+
+			<?php print render($tabs); ?>
+			
+		</main>
+
+		<?php if ($page['sidebar_first']): ?>
+			<aside class="sidebar_first">
+				<?php print render($page['sidebar_first']); ?>
+			</aside>
+		<?php endif; ?>
 
 	</div>
-</main>
+</div>
 
 <footer class="site-footer">
 	<div class="row">

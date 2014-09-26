@@ -1,3 +1,4 @@
+
 @import 'config';
 
 @import 'global/base';
@@ -12,10 +13,18 @@
 
 @import 'helpers/utilities';
 
+@import 'modules/logo';
+@import 'modules/navigation';
 @import 'modules/searchform';
+@import 'modules/tageskarte';
+@import 'modules/mitarbeiter';
+@import 'modules/angebote';
+@import 'modules/imagegrid';
+@import 'modules/artikel';
+@import 'modules/maps';
+
 
 @import 'sections/header';
-@import 'sections/navigation';
 @import 'sections/main';
 @import 'sections/footer';
 
@@ -24,3 +33,13 @@
 
 @import 'vendor/drupal';
 
+
+.site-main {
+	@include clearfix();
+	float: left;
+	width: 100%;
+	padding-bottom: 20em;
+	background-image: url(images/biomarkt-logo.svg);
+	background-repeat: no-repeat;
+	background-position: center bottom 8em;
+}

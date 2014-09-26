@@ -5,26 +5,116 @@ $blue-dark: #173d42;
 $beige: #f1f3e7;
 $mute: rgba(255,255,255,.4);
 $red-dark: darken($red, 60%);
+$white: #fff;
 
 $background-color: $beige;
 
 $link-color: $red;
+$text-color: $blue-dark;
 
 $font-family-copy: "pt serif", georgia, serif;
 $font-family-sans: "pt sans", helvetica, arial, serif;
 $font-family-serif: "pt serif", helvetica, arial, serif;
+$font-family-script: "gooddog-new";
+
+
+$font-family-display: $font-family-serif;
 
 $font-color: $blue-dark;
 
+$font-weight-bold: 700;
 
-$font-size-xxl: 25px;
-$font-size-xl: 21px;
-$font-size-l: 18px;
-$font-size-m: 14px;
-$font-size-s: 12px;
+$border-radius: 5px;
 
+$font-size-1:			12px;
+$font-size-2:			16px;
+$font-size-3:			20px;
+$font-size-4:			24px;
+$font-size-5:			28px;
+$font-size-6:			34px;
+$font-size-7:			40px;
 
-$line-height-m: 20px;
-$line-height-l: 24px;
+$line-height-1:			15px;
+$line-height-2:			20px;
+$line-height-3:			25px;
+$line-height-4:			30px;
+$line-height-5:			35px;
+$line-height-6:			40px;
+$line-height-7:			45px;
 
-$page-width: 1000px;
+$baseline: 10px;
+$padding: 5px;
+
+$page-width: 1200px;
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+// font sizing
+
+@mixin font-size-s() {
+	font-size: $font-size-1;
+	line-height: $line-height-1;
+}
+
+@mixin font-size-m() {
+	font-size: $font-size-2;
+	line-height: $line-height-2;
+}
+
+@mixin font-size-l() {
+	font-size: $font-size-2;
+	line-height: $line-height-1;
+	@media (min-width: 700px) { 
+		font-size: $font-size-3;
+		line-height: $line-height-3;
+	}
+	@media (min-width: 900px) { 
+		font-size: $font-size-4;
+		line-height: $line-height-4;
+	}
+}
+
+@mixin font-size-xl() {
+	font-size: $font-size-3;
+	line-height: $line-height-3;
+	@media (min-width: 700px) { 
+		font-size: $font-size-4;
+		line-height: $line-height-4;
+	}
+	@media (min-width: 900px) { 
+		font-size: $font-size-5;
+		line-height: $line-height-5;
+	}
+}
+
+@mixin font-size-xxl() {
+	font-size: $font-size-4;
+	line-height: $line-height-4;
+	@media (min-width: 700px) { 
+		font-size: $font-size-5;
+		line-height: $line-height-5;
+	}
+	@media (min-width: 900px) { 
+		font-size: $font-size-6;
+		line-height: $line-height-6;
+	}
+}
+
+@mixin font-size-xxxl() {
+	font-size: $font-size-5;
+	line-height: $line-height-5;
+	@media (min-width: 700px) { 
+		font-size: $font-size-6;
+		line-height: $line-height-6;
+	}
+	@media (min-width: 900px) { 
+		font-size: $font-size-7;
+		line-height: $line-height-7;
+	}
+}

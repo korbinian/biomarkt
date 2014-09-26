@@ -1,0 +1,38 @@
+#block-views-neuigkeiten-block {
+	.block-title {
+		display: none;
+	}
+}
+
+.view-neuigkeiten {
+	li {
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+		background: url(././images/ruler.png) no-repeat center bottom;
+		@extend %clearfix;
+		img {
+			max-width: 50%;
+			float: right;
+			margin: 0 0 $baseline $padding*2;
+			border: 5px solid $white;
+			border-radius: $border-radius;
+			box-shadow: 2px 2px 5px darken($beige, 10%);
+		}
+		.artikel-title {
+			@include font-size-l();
+		}
+	}
+}
+
+.node-seite {
+	.field-name-field-teaserbild {
+		margin-bottom: $baseline;
+	}
+	.page-title {
+		@include font-size-xxxl();
+		padding: $padding*4;
+	}
+	.field-name-body {
+		padding: $padding*4;
+	}
+}

@@ -1,0 +1,13 @@
+.field-name-field-teaserbild {
+	border: 5px solid $white;
+	border-radius: $border-radius;
+	box-shadow: 2px 2px 5px darken($beige, 10%);
+}
+
+.sidebar_first, .sidebar_second {
+	h2, h3 {
+		font-size: $font-size-3;
+		line-height: $line-height-3;
+		margin-bottom: $baseline;
+	}
+}

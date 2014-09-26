@@ -1,4 +1,36 @@
 .row {
 	max-width: $page-width;
 	margin: 0 auto;
+	position: relative;
+	@extend %clearfix;
 }
+
+.front {
+	.site-content {
+		float: left;
+		width: 45%
+	}
+	.sidebar_first {
+		float: left;
+		width: 25%;
+		padding: 0 0 0 20px;
+	}
+	.sidebar_second {
+		float: left;
+		width: 30%;
+		padding: 0 20px 0 20px;
+	}	
+}
+
+.not-front {
+	.site-content {
+		float: left;
+		width: 55%;
+	}
+	.sidebar_first {
+		float: left;
+		width: 45%;
+		padding: 0 20px;
+	}
+}
+

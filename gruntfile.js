@@ -147,8 +147,8 @@ module.exports = function(grunt) {
                 port: 21,
                 authKey: 'key1'
             },
-            src: 'build/',
-            dest: 'sites/all/themes/biomarkt/',
+            src: 'build/styles/',
+            dest: 'sites/all/themes/biomarkt/styles/',
             exclusions: []
             }
         },

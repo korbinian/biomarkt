@@ -1,0 +1,20 @@
+.site-footer  {
+	color: $green-dark;
+	background: $green-light url(././images/border.png) 120% 0 repeat-x;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+	.block-title {
+		display: none;
+	}
+	a {
+		font-weight: $font-weight-bold;
+		border-bottom: 2px solid;
+		color: $green-dark;
+	}
+	.row {
+		padding: $padding*4;
+	}
+}

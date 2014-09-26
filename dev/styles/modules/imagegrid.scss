@@ -1,0 +1,7 @@
+.img-grid-4 {
+	@extend %clearfix;
+	li {
+		float: left;
+		width: 25%;
+	}	
+}

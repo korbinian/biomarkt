@@ -1,0 +1,21 @@
+
+#search-block-form {
+	overflow: hidden;
+	background: $mute;
+	position: relative;
+	.form-text {
+		float: left;
+		width: 100%;
+		&:focus {
+			border-color: $green-light;
+		}
+	}
+	.form-submit {
+		position: absolute;
+		top: 2px;
+		right: 2px;
+	}
+}
+
+
+

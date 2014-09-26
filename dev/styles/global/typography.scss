@@ -1,0 +1,100 @@
+body, select, input, textarea, button { 
+	@include font-size-m();
+	font-family: $font-family-sans;
+	color: $font-color;
+}
+
+p {
+	margin: 0;
+	article & {
+		margin-bottom: $baseline;
+	}
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	position: relative;
+	border-bottom: 2px solid $red;
+	&:hover {
+		outline: 0;
+		border-color: $red-dark;
+	}
+	&:active {
+		outline: 0;
+		top: 1px;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family-display;
+	margin: 0;
+}
+
+h1 {
+	@include font-size-xxl();
+	article & {
+		margin-bottom: $baseline;
+	}
+}
+
+h2 {
+	@include font-size-xl();
+	article & {
+		margin-bottom: $baseline;
+	}
+}
+
+h3 {
+	@include font-size-l();
+	article & {
+		margin-bottom: $baseline;
+	}
+}
+
+h4, h5, h6{
+	@include font-size-m();
+}
+
+small {
+	@include font-size-s();
+}
+
+b, strong, em {
+	font-weight: $font-weight-bold;
+}
+
+address {
+	font-style: normal;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+sub, sup {
+	@include font-size-s();
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+blockquote {
+	margin: $baseline;
+}

@@ -1,0 +1,79 @@
+#block-views-angebote-block {
+	h2 {
+		margin:  0;
+	}
+}
+
+.angebote-zeitraum {
+	font-style: italic;
+	margin-bottom: $baseline;
+}
+
+
+.angebote {
+	.angebot {
+		height: 166px;
+        background: #fff;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 1em;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px darken($beige, 10%);
+		.angebot-bild {
+			position: absolute;
+            z-index: 1;
+		}
+		.angebot-bezeichnung {
+			padding: 14px 1em 0 14px;
+            position: relative;
+            z-index: 2;
+            background: $mute;
+            text-align: left;
+            margin: 0;
+		}
+		.angebot-herkunft{
+			padding: 0 .5em 0 1em;
+            font-style: italic;
+            position: relative;
+            z-index: 3;
+            background: $mute;
+            display: inline-block;
+		}
+		.views-field-field-preis {
+			display: inline-block;
+            width: 4em;
+            height: 4em;
+            background: $red;
+            position: absolute;
+            bottom: .5em;
+            right: 2em;
+            border-radius: 100% 100%;
+            z-index: 4;
+            box-shadow: 1px 1px 2px $red-dark;
+            transform: rotateX(4deg);
+            .angebot-preis {
+                position: absolute;
+                @include font-size-l();
+                top: 1em;
+                left: .6em;
+                font-weight: bold;
+                text-shadow: 1px 1px 1px #000;
+                color: #fff;
+            }
+		}
+		.angebot-einheit {
+			position: absolute;
+                bottom: .6em;
+                font-weight: bold;
+                right: 2em;
+                width: 6em;
+                text-align: right;
+                display: block;
+                @include font-size-s();
+                color: $green-light;
+                text-shadow: 1px 1px 1px #000;
+                font-style: italic;
+                z-index: 5;
+		}
+	}
+}

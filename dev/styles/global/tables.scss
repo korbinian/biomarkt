@@ -1,0 +1,12 @@
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-bottom: $baseline;
+	width: 100%;
+	td, th {
+		vertical-align: top;
+		text-align: left;
+		padding: $padding;
+	}
+	
+}

@@ -1,0 +1,18 @@
+#map-canvas { 
+    height: 300px;
+    margin: 0px;
+    padding: $padding;
+    background: $white;
+    border: 5px solid $white;
+    border-radius: $border-radius;
+    a, .gmnoprint {
+        display: none;
+    }
+}
+
+.page-node-6 {
+    #map-canvas {
+        padding: 0;
+        border: none;
+    }
+}

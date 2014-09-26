@@ -1,0 +1,28 @@
+.view-mitarbeiter-innen {
+	ul {
+		li {
+			padding: 5px;
+			background: #fff;
+			border-radius: 5px;
+			box-shadow: 2px 2px 5px darken($beige, 10%);
+			float: left;
+			width: 46%;
+			margin-right: 4%;
+			margin-bottom: 5%;
+			.views-field-field-foto {
+				margin-bottom: $baseline;
+			}
+			.views-field-title {
+				font-size: $baseline;
+			}
+			.views-field-field-position {
+				@include font-size-s();
+				font-style: italic;
+				
+			}
+			&:nth-of-type(odd) {
+				clear: both;
+			}
+		}
+	}
+}

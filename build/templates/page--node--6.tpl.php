@@ -55,6 +55,8 @@
 	</div>
 </div>
 
+<div id="map-canvas"></div>
+
 <footer class="site-footer">
 	<div class="row">
 		<?php print render($page['footer']); ?>

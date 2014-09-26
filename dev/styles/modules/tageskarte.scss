@@ -1,0 +1,52 @@
+#block-views-tageskarte-block {
+	background: $blue-dark;
+	background: linear-gradient(to right bottom, $blue-dark, darken($blue-dark, 10%));
+	color: $white;
+	padding: $padding*4;
+	box-shadow: inset 0 0 10px darken($blue-dark, 20%);
+	font-family: $font-family-script;
+}
+
+.field-content {
+	margin-bottom: $baseline;
+}
+
+.field-content:empty {
+	margin-bottom: 0;
+}
+
+#block-views-tageskarte-block {
+	position: relative;
+	@include clearfix();
+	h2 {
+		margin-bottom: 0;
+	}
+	.views-field-field-datum {
+		margin-bottom: $baseline;
+		font-style: italic;
+		color: $mute;
+	}
+}
+
+.views-field-field-gericht-1, 
+.views-field-field-gericht-2, 
+.views-field-field-gericht-3, 
+.views-field-field-gericht-4, 
+.views-field-field-gericht-5, 
+.views-field-field-gericht-6 {
+	float: left;
+	width: 85%;
+	.field-content {
+		padding-right: 2em;
+	}
+}
+
+.views-field-field-preis-gericht-1, .views-field-field-preis-gericht-2,
+.views-field-field-preis-gericht-3, .views-field-field-preis-gericht-4,
+.views-field-field-preis-gericht-5, .views-field-field-preis-gericht-6  {
+	float: right;
+	width: 15%;
+	text-align: right;
+	font-weight: 700;
+
+}

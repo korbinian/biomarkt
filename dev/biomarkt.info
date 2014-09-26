@@ -8,6 +8,8 @@ core 				= 7.x
 
 
 stylesheets[all][]	= styles/style.css
+stylesheets[all][] 	= styles/overrides/system.menus.css
+stylesheets[all][] 	= styles/overrides/system.theme.css
 
 
 regions[navigation]		= Navigation bar

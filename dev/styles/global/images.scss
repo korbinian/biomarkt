@@ -5,3 +5,30 @@ img {
 	vertical-align: bottom;
 	-ms-interpolation-mode: bicubic;
 }
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 0 0 $baseline 0;
+	padding: $padding;
+	background: $white;
+	border-radius: $border-radius;
+	box-shadow: 2px 2px 5px darken($beige, 10%);
+	figcaption {
+		font-style: italic;
+	}
+}
+
+.figure-full {
+	margin-left: -20px;
+}
+
+
+.figure-50 {
+	margin-left: $padding*2;
+	margin-bottom: $baseline;
+	float: right;
+	max-width: 50%;
+}

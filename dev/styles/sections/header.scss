@@ -1,0 +1,10 @@
+.site-search {
+	.block {
+		padding: 0;
+	}
+	@media (min-width: 500px) { 
+		float: right;
+		width: 25%;
+		margin-top: 65px;
+	}
+}
