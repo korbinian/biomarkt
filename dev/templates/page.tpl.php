@@ -51,10 +51,10 @@
 			<?php print render($page['content']); ?>
 
 			<h2>col-1</h2>
-			<?php print render($page['col-1']); ?>
+			<?php print render($page['sidebar_first']); ?>
 
 			<h2>col-2</h2>
-			<?php print render($page['col-2']); ?>
+			<?php print render($page['sidebar_second']); ?>
 			
 			<h2>action links</h2>
 			<?php if ($action_links): ?>
@@ -70,12 +70,6 @@
 
 <footer class="site-footer">
 	<div class="row">
-		<p>
-			<b>Wasserburger Biomarkt</b> | <a href="http://wasserburger-biomarkt.de/node/98">Impressum</a>
-			<span class="nowrap"><br><i class="fa fa-map-marker"></i> <b>Adresse</b> Bahnhofsplatz 5 83512 Wasserburg am Inn &bullet;</span>
-			<span class="nowrap"><i class="fa fa-phone"></i> <b>Tel</b> 08071 922 56 52 &bullet;</span>
-			<span class="nowrap"><i class="fa fa-fax"></i> <b>Fax</b> 08071 922 56 53 &bullet;</span>
-			<span class="nowrap"><i class="fa fa-envelope"></i> <b>E-Mail</b> <a href="mailto:mail@wasserburger-biomarkt.de">mail@wasserburger-biomarkt.de</a></span>
-		</p>
+		<?php print render($page['footer']); ?>
 	</div>
 </footer>

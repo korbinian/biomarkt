@@ -10,10 +10,11 @@ core 				= 7.x
 stylesheets[all][]	= styles/style.css
 
 
-regions[navigation]	= Navigation bar
-regions[search]		= Searchform
-regions[content]	= Content
-regions[col-1]		= Col 1
-regions[col-2]		= Col 2
-regions[col-3]		= Col 3
-regions[footer]		= Footer
+regions[navigation]		= Navigation bar
+regions[search]			= Searchform
+regions[help]			= Help
+regions[highlighted]	= Highlighted
+regions[content]		= Content
+regions[sidebar_first]	= Sidebar 1
+regions[sidebar_second]	= Sidebar 2
+regions[footer]			= Footer

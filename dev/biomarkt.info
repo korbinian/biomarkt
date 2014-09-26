@@ -12,10 +12,9 @@ stylesheets[all][]	= styles/style.css
 
 regions[navigation]		= Navigation bar
 regions[search]			= Searchform
-regions[help]			= help
-regions[highlighted]	= highlighted
+regions[help]			= Help
+regions[highlighted]	= Highlighted
 regions[content]		= Content
-
-regions[sidebar_first]	= Col 2
-regions[sidebar_second]	= Col 3
+regions[sidebar_first]	= Sidebar 1
+regions[sidebar_second]	= Sidebar 2
 regions[footer]			= Footer
