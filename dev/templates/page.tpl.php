@@ -9,37 +9,60 @@
 		<nav class="site-nav">
 			<?php print render($page['navigation']); ?>
 		</nav>
-		<?php print render($page['search']); ?>
+		<div class="site-search">
+			<?php print render($page['search']); ?>
+		</div>
 	</div>
 </header>
 	
 <main class="site-main">
 	<div class="row">
-		
-		<div class="col-1">
-			<?php print render($page['col-1']); ?>
-		</div>
 
-		<div class="col-2">
-			<?php print render($page['col-2']); ?>	
-		</div>
+		<div class="temp">
 
-		<div class="meta col-full">
-			<?php print render($tabs); ?>
-			<?php print render($page['help']); ?>
-			<?php if ($action_links): ?>
-			<ul><?php print render($action_links); ?></ul>
-			<?php endif; ?>
-			<?php print $feed_icons; ?> 
-			<?php print render($title_prefix); ?>
-			<?php if ($title): ?>
-			<h1><?php print $title; ?></h1>
-			<?php endif; ?>
-			<?php print render($title_suffix); ?>
-			<?php print render($page['highlighted']); ?>
+			<h2>breadcrumbs</h2>
 			<?php print $breadcrumb; ?>
-			<?php print $messages; ?>
-			<?php print render($page['content']); ?>	
+
+			<?php print render($title_prefix); ?>
+    		<?php if ($title): ?>
+      			<h1 class="page-title"><?php print $title; ?></h1>
+    		<?php endif; ?>
+    		<?php print render($title_suffix); ?>
+
+    		<h2>tabs</h2>
+			<?php print render($tabs); ?>
+
+			<h2>messages</h2>
+			<?php if ($messages): ?>
+        		<?php print $messages; ?>
+      		<?php endif; ?>
+			
+			<h2>help</h2>
+      		<?php if ($page['help']): ?>
+          		<?php print render($page['help']); ?>
+      		<?php endif; ?>
+
+			<h2>highlighted</h2>
+			<?php if ($page['highlighted']): ?>
+				<?php print render($page['highlighted']); ?>
+			<?php endif; ?>
+
+			<h2>content</h2>
+			<?php print render($page['content']); ?>
+
+			<h2>col-1</h2>
+			<?php print render($page['col-1']); ?>
+
+			<h2>col-2</h2>
+			<?php print render($page['col-2']); ?>
+			
+			<h2>action links</h2>
+			<?php if ($action_links): ?>
+				<ul class="action-links">
+					<?php print render($action_links); ?>
+				</ul>
+			<?php endif; ?>
+
 		</div>
 
 	</div>
