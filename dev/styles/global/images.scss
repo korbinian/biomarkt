@@ -27,8 +27,12 @@ figure {
 
 
 .figure-50 {
-	margin-left: $padding*2;
+	
 	margin-bottom: $baseline;
-	float: right;
-	max-width: 50%;
+	
+	@media (min-width: 500px) {
+		float: right;
+		max-width: 50%;
+		margin-left: $padding*2;
+	}
 }

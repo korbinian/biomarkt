@@ -1,5 +1,6 @@
 #map-canvas { 
     height: 300px;
+    width: 100%;
     margin: 0px;
     padding: $padding;
     background: $white;
@@ -12,7 +13,14 @@
 
 .page-node-6 {
     #map-canvas {
-        padding: 0;
-        border: none;
+        height: 600px;
+    }
+}
+
+.page-node-6 {
+    #map-canvas {
+        border: 0 solid;
+        border-top: 5px solid #fff;
+        border-radius: 0;
     }
 }

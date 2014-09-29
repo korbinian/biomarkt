@@ -5,32 +5,42 @@
 	@extend %clearfix;
 }
 
+.site-content, .sidebar_first, .sidebar_second {
+	float: left;
+	width: 100%;
+}
+
 .front {
 	.site-content {
-		float: left;
-		width: 45%
+		@media (min-width: 750px) { 
+			width: 45%
+		}
 	}
 	.sidebar_first {
-		float: left;
-		width: 25%;
-		padding: 0 0 0 20px;
+		@media (min-width: 750px) { 
+			width: 25%;
+			padding: 0 0 0 20px;
+		}
 	}
 	.sidebar_second {
-		float: left;
-		width: 30%;
-		padding: 0 20px 0 20px;
+		@media (min-width: 750px) { 
+			width: 30%;
+			padding: 0 20px 0 20px;
+		}
 	}	
 }
 
 .not-front {
 	.site-content {
-		float: left;
-		width: 55%;
+		@media (min-width: 750px) { 
+			width: 55%;
+		}
 	}
 	.sidebar_first {
-		float: left;
-		width: 45%;
-		padding: 0 20px;
+		@media (min-width: 750px) { 
+			width: 45%;
+			padding: 0 20px;
+		}
 	}
 }
 

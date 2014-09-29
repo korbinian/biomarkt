@@ -11,3 +11,9 @@
 		margin-bottom: $baseline;
 	}
 }
+
+.sidebar_first, .sidebar_second {
+	@media (max-width: 500px) {
+		padding: 0 $padding*4;
+	}
+}

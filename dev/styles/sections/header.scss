@@ -8,3 +8,21 @@
 		margin-top: 65px;
 	}
 }
+
+.site-logo {
+	@media (max-width: 500px) { 
+		width: 100%;
+	}
+}
+
+.site-nav {
+	@media (max-width: 500px) { 
+		padding: 20px;
+	}
+}
+
+.site-search {
+	@media (max-width: 500px) { 
+		padding: 0 20px 20px 20px;
+	}
+}

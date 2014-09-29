@@ -46,16 +46,12 @@
 			
 		</main>
 
-		<?php if ($page['sidebar_first']): ?>
-			<aside class="sidebar_first">
-				<?php print render($page['sidebar_first']); ?>
-			</aside>
-		<?php endif; ?>
-
 	</div>
 </div>
 
-<div id="map-canvas"></div>
+<div id="map-canvas">
+	hello
+</div>
 
 <footer class="site-footer">
 	<div class="row">
